@@ -22,14 +22,15 @@ int main(int argc, char* argv[])
       {
 	int arglength = 0;
 	for(int i = 1; i < argc; i++){
-	  arglength += strlen(argv[i]) + 1;
+	  arglength += strlen(argv[i]);
 	}
 	
 	char* command = (char*)malloc(sizeof(char)*arglength);
 	
 	for(int i = 1; i < argc; i++){
 	  strcat(command, argv[i]);
-	  strcat(command, " ");
+	  if(i != argc-1)
+	    strcat(command, " ");
 	}
 	
 	memset(buffer, '\0', sizeof(buffer));

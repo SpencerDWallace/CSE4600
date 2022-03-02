@@ -2,6 +2,8 @@
 Student: Spencer Wallace
 Instructor: Dr. Khan
 CSUSB - CSE 4600
+
+Template provide by Dr.Khan
 ***************************************/
 
 
@@ -10,7 +12,7 @@ CSUSB - CSE 4600
 
 int main(int argc, char* argv[])
 {
-  if(argc > 1 && argc <= 2){
+  if(argc == 2){
     std::cout << "Running " << argv[1] << " with execl" << std::endl << std::endl;
   execl(argv[1], argv[1], NULL );
 

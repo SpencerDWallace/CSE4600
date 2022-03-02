@@ -2,6 +2,8 @@
 Student: Spencer Wallace
 Instructor: Dr. Khan
 CSUSB - CSE 4600
+
+Template provided by Dr. Khan
 ***************************************/
 #include <sys/types.h>
 #include <sys/wait.h>

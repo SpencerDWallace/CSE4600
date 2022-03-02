@@ -2,6 +2,8 @@
 Student: Spencer Wallace
 Instructor: Dr. Khan
 CSUSB - CSE 4600
+
+Template provide by Dr.Khan
 ***************************************/
 #include <sys/types.h>
 #include <unistd.h>
