@@ -5,7 +5,7 @@ CSUSB - CSE 4600
 
 Template provide by Dr.Khan
 ***************************************/
-
+//g++ -o test_exec test_exec.cpp
 
 #include <unistd.h>
 #include <iostream>

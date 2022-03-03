@@ -7,6 +7,8 @@ geeksforgeeks was used
 to reference stacks and 
 template functions
 ***************************/
+//g++ -o fork fork.cpp
+
 #include <iostream>
 #include <stdlib.h>
 #include <unistd.h>

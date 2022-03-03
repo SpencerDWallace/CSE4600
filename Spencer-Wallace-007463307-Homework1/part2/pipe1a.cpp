@@ -5,6 +5,7 @@ CSUSB - CSE 4600
 
 Template Provided by Dr. Khan
 *****************************/
+//g++ -o pipe1a pipe1a.cpp 
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>

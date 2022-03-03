@@ -5,6 +5,8 @@ CSUSB - CSE 4600
 
 Template provided by Dr. Khan
 ***************************************/
+//g++ -o test_wait test_wait.cpp
+
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>

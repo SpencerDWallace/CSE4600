@@ -6,7 +6,7 @@ CSUSB - CSE 4600
 Template provided by Dr Khan
 ***************************************/
 /*
-Compile: gcc -o shared_resource_mutex shared_resource_mutex.c -lpthread
+Compile: g++ -o shared_resource_mutex shared_resource_mutex.cpp -lpthread
 Execute: ./shared_resource_mutex
 */
 #include <stdio.h>

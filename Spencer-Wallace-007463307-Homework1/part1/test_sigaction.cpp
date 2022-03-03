@@ -6,19 +6,13 @@ CSUSB - CSE 4600
 Template provide by Dr.Khan
 Referenced IBM documents on sigemptyset
 ***************************************/
-
+//g++ -o -test_sigaction test_sigaction.cpp
 #include <signal.h>
 #include <unistd.h>
 #include <iostream>
 
-void func(int sig)
-{
-  std::cout << "oops -- i got a signal " << sig << std::endl;
-}
-
 int main()
 {
-  (void) signal(SIGQUIT, func);
   //begin IBM reference
   struct sigaction ss;
   sigemptyset(&ss.sa_mask);
