@@ -1,12 +1,9 @@
+/*
+g++ -o csusb_multi csusb_multi.cpp -lpthread
+*/
 #include <pthread.h>                                                            
 #include <stdio.h>
 #include <cstdlib>
-
-#ifdef _WIN32
-#include <Windows.h>
-#else
-#include <unistd.h>
-#endif
 
 int n = 50; //array size
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
