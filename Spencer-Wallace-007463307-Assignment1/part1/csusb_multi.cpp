@@ -50,8 +50,6 @@ void* thread_func(void* data)
 
   for(int i = 0; i < n; i++)
     {
-      pthread_mutex_lock(&mutex);
-      //printf("I, thread: %d have the lock.\n", args->thID);
       switch(args->thID)
 	{
 	case 3: csusb(args->nums[i]); break;
@@ -60,8 +58,6 @@ void* thread_func(void* data)
 	case 4: number(args->nums[i]); break;
 	default: printf("BAD THREAD!\n"); break;
 	}
-      //      printf("I, thread: %d have released the lock.\n", args->thID);
-      pthread_mutex_unlock(&mutex);
       pthread_barrier_wait(&barrier);
     }
   return NULL;
