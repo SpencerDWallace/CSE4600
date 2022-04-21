@@ -1,3 +1,6 @@
+/*
+g++ -o csusb_single csusb_single.cpp -lpthread
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
