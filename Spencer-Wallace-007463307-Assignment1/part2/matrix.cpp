@@ -1,3 +1,6 @@
+/*
+g++ -o matrix matrix.cpp -lpthread
+*/
 /******** idea for algorithm ********/
 //each row in matrix A is assigned a thread
 //each thread iterates through all columns in matrix B to produce output
