@@ -65,13 +65,13 @@ int main()
   int* t1 = new int; *t1 = 1;
   int* t2 = new int; *t2 = 2;
   int* t3 = new int; *t3 = 3;
-  
+  /*
   mult((void*)t0);
   mult((void*)t1);
   mult((void*)t2);
   mult((void*)t3);
+  */  
   
-  /*
   pthread_create (&id1, NULL, mult, (void*)t0);
   pthread_create (&id2, NULL, mult, (void*)t1);
   pthread_create (&id3, NULL, mult, (void*)t2);
@@ -81,7 +81,7 @@ int main()
   pthread_join (id2, NULL);
   pthread_join (id3, NULL);
   pthread_join (id4, NULL);
-  */
+  
   print_output(mat->output);
   return 0;
 }
