@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/*
+g++ -o csusb_single csusb_single.cpp -lpthread
+*/
+>>>>>>> refs/remotes/origin/master
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
