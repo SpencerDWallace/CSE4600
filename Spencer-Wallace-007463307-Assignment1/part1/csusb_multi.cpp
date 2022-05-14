@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-=======
 /*
 g++ -o csusb_multi csusb_multi.cpp -lpthread
 */
->>>>>>> refs/remotes/origin/master
+
 #include <pthread.h>                                                            
 #include <stdio.h>
 #include <cstdlib>
@@ -53,24 +51,18 @@ void* thread_func(void* data)
 
   for(int i = 0; i < n; i++)
     {
-<<<<<<< HEAD
       pthread_mutex_lock(&mutex);
       //printf("I, thread: %d have the lock.\n", args->thID);
-=======
->>>>>>> refs/remotes/origin/master
       switch(args->thID)
-	{
-	case 3: csusb(args->nums[i]); break;
-	case 1: csu(args->nums[i]); break;
-	case 2: sb(args->nums[i]); break;
-	case 4: number(args->nums[i]); break;
-	default: printf("BAD THREAD!\n"); break;
-	}
-<<<<<<< HEAD
+      {
+      case 3: csusb(args->nums[i]); break;
+      case 1: csu(args->nums[i]); break;
+      case 2: sb(args->nums[i]); break;
+      case 4: number(args->nums[i]); break;
+      default: printf("BAD THREAD!\n"); break;
+      }
       //      printf("I, thread: %d have released the lock.\n", args->thID);
       pthread_mutex_unlock(&mutex);
-=======
->>>>>>> refs/remotes/origin/master
       pthread_barrier_wait(&barrier);
     }
   return NULL;
